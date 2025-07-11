@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>All Blog Posts</h2>
+{% for post in posts %}
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5 class="card-title">{{ post.title }}</h5>
+            <h6 class="card-subtitle mb-2 text-muted"><strong>By {{ post.author }} | {{ post.created_at }}</strong></h6>
+            <p class="card-text">{{ post.content[:150] }}...</p>
+            <a href="/post/{{ post.id }}" class="btn btn-primary">Read More</a>
+            <span class="badge bg-primary">{{ post.like_count }} Likes</span>
+            <span class="badge bg-secondary">{{ post.comment_count }} Comments</span>
+            <a href="/update/{{post.id}}" class="btn btn-primary">Edit post</a>
+            <a href="/delete/{{post.id}}" class="btn btn-primary">Delete post</a>
+        </div>
+    </div>
+{% endfor %}
+{% endblock %}
+
