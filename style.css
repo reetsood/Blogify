@@ -1,0 +1,151 @@
+/* GLOBAL */
+body, html {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333333;
+    background-color: #F4F6F7;
+}
+
+/* HEADINGS */
+h1, h2, h3 {
+    color: #2C3E50;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* LINKS */
+a {
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    border-radius: 0;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 1.5rem;
+}
+
+.navbar-brand {
+    color: #2C3E50;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 10px;
+}
+
+.nav-link {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #2C3E50;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #3498DB;
+}
+
+/* LAYOUT */
+.container-fluid {
+    padding: 0;
+}
+
+.content {
+    background-color: #90D5FF;
+    padding: 2rem;
+}
+
+/* CARD + POST + FORM BOXES */
+.card, .post, form {
+    background-color: #FFFFFF;
+    color: #333333;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    margin: 1rem 0;
+}
+
+.post {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.post h3 {
+    color: #2C3E50;
+    margin-bottom: 0.5rem;
+}
+
+.post p {
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+/* FORMS */
+textarea, input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+/* BUTTONS */
+.btn {
+    background-color: #3498DB;
+    color: #FFFFFF !important;
+    padding: 0.4rem 0.8rem;
+    margin-right: 0.5rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    border: none;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #2980B9;
+}
+
+/* BADGES */
+.badge {
+    display: inline-block;
+    background-color: #dfe6e9;
+    color: #2C3E50;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    margin-right: 0.5rem;
+}
+/* POST CONTAINER*/
+.single-post-container {
+    background-color: #ffffff;
+    color: #333333;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+/* ALERTS */
+.alert {
+    margin-top: 20px;
+    border-radius: 6px;
+    padding: 0.8rem 1rem;
+    font-size: 0.95rem;
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
